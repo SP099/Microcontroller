@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/adc.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/i2c.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/i2c.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/clcd.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/clcd.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/EEprom.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/main.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/timers.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/car_black_box_def.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/digital_keypad.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/EEprom.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/ds1307.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/timers.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/car_black_box_def.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/uart.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/ds1307.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/main.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/isr.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/adc.c</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/uart.h</file>
+            <file>file:/C:/Users/Lenovo/Downloads/car_black_box.X/digital_keypad.c</file>
+        </group>
+    </open-files>
+</project-private>

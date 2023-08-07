@@ -1,0 +1,108 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.20/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 /home/emertxe/MPLABXProjects/A10.X/digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"18
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+"14 /home/emertxe/MPLABXProjects/A10.X/main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"20
+[v _main main `(v  1 e 1 0 ]
+"12 /home/emertxe/MPLABXProjects/A10.X/ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"23
+[v _display display `(v  1 e 1 0 ]
+"166 /opt/microchip/mplabx/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"20 /home/emertxe/MPLABXProjects/A10.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"26
+[v main@digit digit `[12]ui  1 a 24 0 ]
+"24
+[v main@ssd ssd `[4]uc  1 a 4 24 ]
+"27
+[v main@count count `ui  1 a 2 33 ]
+[v main@wait wait `ui  1 a 2 28 ]
+"25
+[v main@key key `uc  1 a 1 32 ]
+"28
+[v main@flag flag `uc  1 a 1 31 ]
+"25
+[v main@cur_key cur_key `uc  1 a 1 30 ]
+[v main@F861 F861 `[12]ui  1 s 24 F861 ]
+"81
+} 0
+"18 /home/emertxe/MPLABXProjects/A10.X/digital_keypad.c
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+{
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+[v read_digital_keypad@mode mode `uc  1 a 1 wreg ]
+"20
+[v read_digital_keypad@once once `uc  1 s 1 once ]
+"22
+[v read_digital_keypad@mode mode `uc  1 a 1 1 ]
+"41
+} 0
+"14 /home/emertxe/MPLABXProjects/A10.X/main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"18
+} 0
+"12 /home/emertxe/MPLABXProjects/A10.X/ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"21
+} 0
+"12 /home/emertxe/MPLABXProjects/A10.X/digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"16
+} 0
+"23 /home/emertxe/MPLABXProjects/A10.X/ssd.c
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@data data `*.4uc  1 a 1 wreg ]
+"32
+[v display@wait wait `ul  1 a 4 4 ]
+"25
+[v display@digit digit `uc  1 a 1 9 ]
+"23
+[v display@data data `*.4uc  1 a 1 wreg ]
+"27
+[v display@data data `*.4uc  1 a 1 8 ]
+"34
+} 0
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0

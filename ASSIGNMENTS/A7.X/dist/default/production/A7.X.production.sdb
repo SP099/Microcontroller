@@ -1,0 +1,124 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.20/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 /home/emertxe/MPLABXProjects/A7.X/isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+"18 /home/emertxe/MPLABXProjects/A7.X/main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"29
+[v _main main `(v  1 e 1 0 ]
+"13 /home/emertxe/MPLABXProjects/A7.X/ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"24
+[v _display display `(v  1 e 1 0 ]
+"12 /home/emertxe/MPLABXProjects/A7.X/timers.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+"59 /opt/microchip/mplabx/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2644
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"2845
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"2878
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2881
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"16 /home/emertxe/MPLABXProjects/A7.X/main.c
+[v _hour hour `ui  1 e 2 0 ]
+[v _min min `ui  1 e 2 0 ]
+[v _flag flag `ui  1 e 2 0 ]
+"29
+[v _main main `(v  1 e 1 0 ]
+{
+"33
+[v main@digit digit `[10]uc  1 a 10 10 ]
+"32
+[v main@ssd ssd `[4]uc  1 a 4 20 ]
+[v main@F860 F860 `[10]uc  1 s 10 F860 ]
+"59
+} 0
+"18
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"27
+} 0
+"12 /home/emertxe/MPLABXProjects/A7.X/timers.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+{
+"24
+} 0
+"13 /home/emertxe/MPLABXProjects/A7.X/ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"22
+} 0
+"24
+[v _display display `(v  1 e 1 0 ]
+{
+[v display@data data `*.4uc  1 a 1 wreg ]
+"33
+[v display@wait wait `ul  1 a 4 0 ]
+"26
+[v display@digit digit `uc  1 a 1 5 ]
+"24
+[v display@data data `*.4uc  1 a 1 wreg ]
+"28
+[v display@data data `*.4uc  1 a 1 4 ]
+"35
+} 0
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 4 ]
+"25
+} 0
+"5 /opt/microchip/xc8/v2.20/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"30
+} 0
+"12 /home/emertxe/MPLABXProjects/A7.X/isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"14
+[v isr@count1 count1 `ul  1 s 4 count1 ]
+[v isr@count2 count2 `ul  1 s 4 count2 ]
+"15
+[v isr@count3 count3 `ui  1 s 2 count3 ]
+"45
+} 0

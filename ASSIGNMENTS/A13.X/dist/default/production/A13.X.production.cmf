@@ -1,0 +1,471 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production/A13.X.production.o
+cinit CODE 0 7E8 7E8 18 2
+text1 CODE 0 3B1 3B1 2A 2
+text2 CODE 0 33D 33D B 2
+text3 CODE 0 348 348 C 2
+text4 CODE 0 337 337 6 2
+text5 CODE 0 3DB 3DB 31 2
+text6 CODE 0 375 375 17 2
+text7 CODE 0 460 460 56 2
+text8 CODE 0 38C 38C 25 2
+text9 CODE 0 40C 40C 54 2
+text10 CODE 0 4B6 4B6 68 2
+idataCOMMON CODE 0 336 336 1 2
+maintext CODE 0 51E 51E 2CA 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 2F 1
+inittext CODE 0 362 362 13 2
+idataBANK0 CODE 0 354 354 E 2
+dataBANK0 BANK0 1 4F 4F E 1
+dataCOMMON COMMON 1 7C 7C 1 1
+config CONFIG 4 2007 2007 1 2
+$/tmp/xcXGcDEfC.o
+end_init CODE 0 0 0 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5D-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5D-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-335 2
+CONST 800-1FFF 2
+ENTRY 3-335 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-335 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-335 2
+STRCODE 800-1FFF 2
+STRING 3-335 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/A13.X.production.o
+7E8 cinit CODE >891:/tmp/xcXBMbCdl.s
+7E8 cinit CODE >894:/tmp/xcXBMbCdl.s
+7E8 cinit CODE >949:/tmp/xcXBMbCdl.s
+7E9 cinit CODE >950:/tmp/xcXBMbCdl.s
+7EA cinit CODE >951:/tmp/xcXBMbCdl.s
+7EB cinit CODE >952:/tmp/xcXBMbCdl.s
+7EC cinit CODE >953:/tmp/xcXBMbCdl.s
+7ED cinit CODE >954:/tmp/xcXBMbCdl.s
+7EE cinit CODE >955:/tmp/xcXBMbCdl.s
+7EF cinit CODE >956:/tmp/xcXBMbCdl.s
+7F0 cinit CODE >957:/tmp/xcXBMbCdl.s
+7F1 cinit CODE >958:/tmp/xcXBMbCdl.s
+7F6 cinit CODE >962:/tmp/xcXBMbCdl.s
+7FB cinit CODE >963:/tmp/xcXBMbCdl.s
+7FC cinit CODE >969:/tmp/xcXBMbCdl.s
+7FC cinit CODE >971:/tmp/xcXBMbCdl.s
+7FD cinit CODE >972:/tmp/xcXBMbCdl.s
+4B6 text10 CODE >5:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4B6 text10 CODE >13:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4C0 text10 CODE >14:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4C8 text10 CODE >15:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4CA text10 CODE >16:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4CB text10 CODE >17:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4D4 text10 CODE >18:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4D8 text10 CODE >16:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4DC text10 CODE >21:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4E5 text10 CODE >22:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+4F7 text10 CODE >23:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+505 text10 CODE >24:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+506 text10 CODE >26:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+50F text10 CODE >27:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+515 text10 CODE >29:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+51D text10 CODE >30:/opt/microchip/xc8/v2.20/pic/sources/c90/common/__lldiv.c
+40C text9 CODE >5:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+40C text9 CODE >12:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+414 text9 CODE >13:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+416 text9 CODE >14:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+417 text9 CODE >15:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+420 text9 CODE >16:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+424 text9 CODE >14:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+428 text9 CODE >19:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+43A text9 CODE >20:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+448 text9 CODE >21:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+451 text9 CODE >22:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+457 text9 CODE >24:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+45F text9 CODE >25:/opt/microchip/xc8/v2.20/pic/sources/c90/common/llmod.c
+38C text8 CODE >15:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+38C text8 CODE >43:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+38E text8 CODE >45:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+392 text8 CODE >46:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+398 text8 CODE >47:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+39F text8 CODE >48:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+3A6 text8 CODE >49:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+3AC text8 CODE >52:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+3B0 text8 CODE >53:/opt/microchip/xc8/v2.20/pic/sources/c90/common/Umul16.c
+460 text7 CODE >24:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+461 text7 CODE >28:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+462 text7 CODE >30:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+46C text7 CODE >31:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+479 text7 CODE >32:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+4AB text7 CODE >33:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+4B5 text7 CODE >35:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+375 text6 CODE >6:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeread.c
+376 text6 CODE >8:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeread.c
+376 text6 CODE >9:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeread.c
+37D text6 CODE >18:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeread.c
+38B text6 CODE >19:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eeread.c
+3DB text5 CODE >6:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eewrite.c
+3DC text5 CODE >8:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eewrite.c
+40B text5 CODE >9:/opt/microchip/xc8/v2.20/pic/sources/c90/pic/__eewrite.c
+337 text4 CODE >13:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+337 text4 CODE >16:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+33C text4 CODE >17:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+348 text3 CODE >12:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+348 text3 CODE >15:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+34B text3 CODE >18:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+34E text3 CODE >21:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+353 text3 CODE >22:/home/emertxe/MPLABXProjects/A13.X/ssd.c
+33D text2 CODE >15:/home/emertxe/MPLABXProjects/A13.X/main.c
+33D text2 CODE >17:/home/emertxe/MPLABXProjects/A13.X/main.c
+342 text2 CODE >18:/home/emertxe/MPLABXProjects/A13.X/main.c
+347 text2 CODE >19:/home/emertxe/MPLABXProjects/A13.X/main.c
+3B1 text1 CODE >19:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3B2 text1 CODE >23:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3B7 text1 CODE >25:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3BC text1 CODE >29:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3CC text1 CODE >31:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3CE text1 CODE >35:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3D7 text1 CODE >37:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3D9 text1 CODE >40:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+3DA text1 CODE >41:/home/emertxe/MPLABXProjects/A13.X/digital_keypad.c
+51E maintext CODE >20:/home/emertxe/MPLABXProjects/A13.X/main.c
+51E maintext CODE >21:/home/emertxe/MPLABXProjects/A13.X/main.c
+528 maintext CODE >22:/home/emertxe/MPLABXProjects/A13.X/main.c
+53D maintext CODE >23:/home/emertxe/MPLABXProjects/A13.X/main.c
+545 maintext CODE >25:/home/emertxe/MPLABXProjects/A13.X/main.c
+54A maintext CODE >27:/home/emertxe/MPLABXProjects/A13.X/main.c
+56C maintext CODE >28:/home/emertxe/MPLABXProjects/A13.X/main.c
+5B0 maintext CODE >29:/home/emertxe/MPLABXProjects/A13.X/main.c
+5F4 maintext CODE >30:/home/emertxe/MPLABXProjects/A13.X/main.c
+622 maintext CODE >34:/home/emertxe/MPLABXProjects/A13.X/main.c
+62D maintext CODE >36:/home/emertxe/MPLABXProjects/A13.X/main.c
+644 maintext CODE >38:/home/emertxe/MPLABXProjects/A13.X/main.c
+64C maintext CODE >39:/home/emertxe/MPLABXProjects/A13.X/main.c
+65A maintext CODE >40:/home/emertxe/MPLABXProjects/A13.X/main.c
+66C maintext CODE >42:/home/emertxe/MPLABXProjects/A13.X/main.c
+674 maintext CODE >46:/home/emertxe/MPLABXProjects/A13.X/main.c
+693 maintext CODE >47:/home/emertxe/MPLABXProjects/A13.X/main.c
+6C9 maintext CODE >48:/home/emertxe/MPLABXProjects/A13.X/main.c
+6FF maintext CODE >49:/home/emertxe/MPLABXProjects/A13.X/main.c
+71E maintext CODE >51:/home/emertxe/MPLABXProjects/A13.X/main.c
+724 maintext CODE >53:/home/emertxe/MPLABXProjects/A13.X/main.c
+72C maintext CODE >55:/home/emertxe/MPLABXProjects/A13.X/main.c
+74D maintext CODE >56:/home/emertxe/MPLABXProjects/A13.X/main.c
+787 maintext CODE >57:/home/emertxe/MPLABXProjects/A13.X/main.c
+7C1 maintext CODE >58:/home/emertxe/MPLABXProjects/A13.X/main.c
+362 inittext CODE >923:/tmp/xcXBMbCdl.s
+362 inittext CODE >924:/tmp/xcXBMbCdl.s
+363 inittext CODE >925:/tmp/xcXBMbCdl.s
+364 inittext CODE >926:/tmp/xcXBMbCdl.s
+365 inittext CODE >927:/tmp/xcXBMbCdl.s
+366 inittext CODE >934:/tmp/xcXBMbCdl.s
+366 inittext CODE >935:/tmp/xcXBMbCdl.s
+36B inittext CODE >936:/tmp/xcXBMbCdl.s
+36C inittext CODE >937:/tmp/xcXBMbCdl.s
+36D inittext CODE >938:/tmp/xcXBMbCdl.s
+36E inittext CODE >939:/tmp/xcXBMbCdl.s
+36F inittext CODE >940:/tmp/xcXBMbCdl.s
+370 inittext CODE >941:/tmp/xcXBMbCdl.s
+371 inittext CODE >942:/tmp/xcXBMbCdl.s
+372 inittext CODE >943:/tmp/xcXBMbCdl.s
+373 inittext CODE >944:/tmp/xcXBMbCdl.s
+374 inittext CODE >945:/tmp/xcXBMbCdl.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production/A13.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__size_of_init_ssd 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack /tmp/xcXGcDEfC.o
+_main A3C 0 CODE 0 maintext dist/default/production/A13.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production/A13.X.production.o
+start 0 0 CODE 0 init /tmp/xcXGcDEfC.o
+__size_of_main 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__size_of___llmod 0 0 ABS 0 - dist/default/production/A13.X.production.o
+?___wmul 71 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_init_digital_keypad 67A 0 CODE 0 text4 dist/default/production/A13.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+read_digital_keypad@mode 71 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+read_digital_keypad@once 7C 0 COMMON 1 dataCOMMON dist/default/production/A13.X.production.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXGcDEfC.o
+_init_ssd 690 0 CODE 0 text3 dist/default/production/A13.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production/A13.X.production.o
+___llmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_init_ssd 6A8 0 CODE 0 text3 dist/default/production/A13.X.production.o
+__pidataCOMMON 66C 0 CODE 0 idataCOMMON dist/default/production/A13.X.production.o
+___wmul@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_EECON1bits 18C 0 ABS 0 - dist/default/production/A13.X.production.o
+_display 8C0 0 CODE 0 text7 dist/default/production/A13.X.production.o
+__end_of___wmul 762 0 CODE 0 text8 dist/default/production/A13.X.production.o
+_EECON1 18C 0 ABS 0 - dist/default/production/A13.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production/A13.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production/A13.X.production.o
+main@key 4A 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+main@ssd 46 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___lldiv A3C 0 CODE 0 text10 dist/default/production/A13.X.production.o
+__end_of___llmod 8C0 0 CODE 0 text9 dist/default/production/A13.X.production.o
+eeprom_write@addr 7B 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+___stackhi 0 0 ABS 0 - /tmp/xcXGcDEfC.o
+___stacklo 0 0 ABS 0 - /tmp/xcXGcDEfC.o
+_init_config 67A 0 CODE 0 text2 dist/default/production/A13.X.production.o
+_eeprom_read 6EA 0 CODE 0 text6 dist/default/production/A13.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__size_of_read_digital_keypad 0 0 ABS 0 - dist/default/production/A13.X.production.o
+___lldiv@counter 2C 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+start_initialization FD0 0 CODE 0 cinit dist/default/production/A13.X.production.o
+___lldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXGcDEfC.o
+_read_digital_keypad 762 0 CODE 0 text1 dist/default/production/A13.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FD0 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production/A13.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___wmul 718 0 CODE 0 text8 dist/default/production/A13.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+eeprom_write@value 2D 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXGcDEfC.o
+_eeprom_write 7B6 0 CODE 0 text5 dist/default/production/A13.X.production.o
+__pdataBANK0 4F 0 BANK0 1 dataBANK0 dist/default/production/A13.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__end_of_read_digital_keypad 7B6 0 CODE 0 text1 dist/default/production/A13.X.production.o
+__ptext10 96C 0 CODE 0 text10 dist/default/production/A13.X.production.o
+___lldiv 96C 0 CODE 0 text10 dist/default/production/A13.X.production.o
+___llmod 818 0 CODE 0 text9 dist/default/production/A13.X.production.o
+__pmaintext A3C 0 CODE 0 maintext dist/default/production/A13.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+___wmul@multiplier 71 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+main@F858 59 0 BANK0 1 dataBANK0 dist/default/production/A13.X.production.o
+main@F860 4F 0 BANK0 1 dataBANK0 dist/default/production/A13.X.production.o
+main@count 4B 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+main@delay 42 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+main@digit 38 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__size_of_display 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__end_of_init_config 690 0 CODE 0 text2 dist/default/production/A13.X.production.o
+__end_of_eeprom_read 718 0 CODE 0 text6 dist/default/production/A13.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 6C4 0 CODE 0 inittext dist/default/production/A13.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_eeprom_write 818 0 CODE 0 text5 dist/default/production/A13.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production/A13.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___lldiv 20 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+?___llmod 70 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__ptext1 762 0 CODE 0 text1 dist/default/production/A13.X.production.o
+__ptext2 67A 0 CODE 0 text2 dist/default/production/A13.X.production.o
+__ptext3 690 0 CODE 0 text3 dist/default/production/A13.X.production.o
+__ptext4 66E 0 CODE 0 text4 dist/default/production/A13.X.production.o
+__ptext5 7B6 0 CODE 0 text5 dist/default/production/A13.X.production.o
+__ptext6 6EA 0 CODE 0 text6 dist/default/production/A13.X.production.o
+__ptext7 8C0 0 CODE 0 text7 dist/default/production/A13.X.production.o
+__ptext8 718 0 CODE 0 text8 dist/default/production/A13.X.production.o
+__ptext9 818 0 CODE 0 text9 dist/default/production/A13.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_init_digital_keypad 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production/A13.X.production.o
+display@digit 79 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display 96C 0 CODE 0 text7 dist/default/production/A13.X.production.o
+__pidataBANK0 6A8 0 CODE 0 idataBANK0 dist/default/production/A13.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+___lldiv@quotient 28 0 BANK0 1 cstackBANK0 dist/default/production/A13.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 6CC 0 CODE 0 inittext dist/default/production/A13.X.production.o
+___llmod@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+___llmod@counter 79 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+display@data 78 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+display@wait 74 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+_init_digital_keypad 66E 0 CODE 0 text4 dist/default/production/A13.X.production.o
+__end_of_main FD0 0 CODE 0 maintext dist/default/production/A13.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production/A13.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production/A13.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production/A13.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production/A13.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production/A13.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production/A13.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production/A13.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+eeprom_read@addr 70 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_init_config 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__initialization FD0 0 CODE 0 cinit dist/default/production/A13.X.production.o
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production/A13.X.production.o
+__pdataCOMMON 7C 0 COMMON 1 dataCOMMON dist/default/production/A13.X.production.o
+___wmul@product 75 0 COMMON 1 cstackCOMMON dist/default/production/A13.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production/A13.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E8 FD0 18 2
+text1 0 3B1 762 2A 2
+text2 0 33D 67A B 2
+text3 0 348 690 C 2
+text4 0 337 66E 6 2
+text5 0 3DB 7B6 31 2
+text6 0 375 6EA 17 2
+text7 0 460 8C0 56 2
+text8 0 38C 718 25 2
+text9 0 40C 818 54 2
+text10 0 4B6 96C 68 2
+idataCOMMON 0 336 66C 1 2
+maintext 0 51E A3C 2CA 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 3D 1
+inittext 0 362 6C4 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 354 6A8 E 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
